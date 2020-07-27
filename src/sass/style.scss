@@ -1,0 +1,23 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+// global
+@import "global/base.scss";
+@import "global/fonts.scss";
+@import "global/custom-normalize.scss";
+@import "global/scaffolding.scss";
+
+// стили сторонних плагинов
+// * - подключение всех файлов из папки
+
+// основное
+
+// компоненты
+@import "blocks/chat.scss";
+
+// шапка
+
+// блоки
+
+
+// модалки

@@ -1,0 +1,42 @@
+@mixin tablet-large {
+  @media (max-width: $desktop-width - 1) {
+    @content;
+  }
+}
+
+@mixin tablet-small {
+  @media (max-width: $tablet-large-width - 1) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $tablet-width - 1) {
+    @content;
+  }
+}
+
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+}
